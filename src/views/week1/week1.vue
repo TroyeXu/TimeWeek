@@ -2,17 +2,17 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>week1</h2>
-    
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   data() {
     return {
-      msg: 'TRYU'
-    };
+      msg: "TRYU"
+    }
   },
   methods: {},
   components: {},
@@ -26,7 +26,7 @@ export default {
   deactivated() {},
   beforeDestroy() {},
   destroyed() {}
-};
+}
 </script>
 
 
