@@ -1,8 +1,11 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>week1</h2>
-
+    <h1>報名驗證</h1>
+    <div class="gird">
+      <div class="promise"></div>
+      <div class="qs"></div>
+      
+    </div>
   </div>
 </template>
 
@@ -16,7 +19,9 @@ export default {
   },
   methods: {},
   components: {},
-  mounted() {},
+  mounted() {
+    console.log(11)
+  },
   beforeCreate() {},
   created() {},
   beforeMount() {},
