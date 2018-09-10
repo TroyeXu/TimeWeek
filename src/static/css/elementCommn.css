@@ -1,0 +1,7 @@
+.el-menu-demo{
+  display: flex;
+      justify-content: space-between;
+  }
+.el-menu--horizontal>.el-menu-item{
+  width: 100%;
+}

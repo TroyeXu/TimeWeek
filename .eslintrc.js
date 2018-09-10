@@ -23,8 +23,8 @@ module.exports = {
 	],
 	"rules": {
 		"indent": [
-			"warn",
-			2
+			"warn",2
+
 		],
 		"linebreak-style": [
 			"warn",
@@ -43,7 +43,7 @@ module.exports = {
 		"no-console": process.env.NODE_ENV === "production" ?
 			"error" : "off", // allow debugger during development
 		"generator-star-spacing": "off", // allow async-await
-		"vue/html-indent": ["error", 4],
+		"vue/html-indent": ["error", 2],
 		"vue/html-self-closing": ["error", {
 			"html": {
 				"void": "never",
