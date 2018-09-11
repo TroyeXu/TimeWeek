@@ -7,6 +7,7 @@ import axios from "axios"
 import $ from "jquery"
 import ElementUI from "element-ui"
 import CollapseTransition from "element-ui/lib/transitions/collapse-transition"
+import VueKonva from "vue-konva"
 
 import "element-ui/lib/theme-chalk/index.css"
 import "font-awesome/scss/font-awesome.scss"
@@ -19,8 +20,7 @@ import "../src/static/css/utilites.sass"
 //framework
 Vue.use(ElementUI)
 Vue.component(CollapseTransition.name, CollapseTransition)
-
-
+Vue.use(VueKonva)
 //qs
 Vue.prototype.Qs = Qs
 // Window.Qs = Qs

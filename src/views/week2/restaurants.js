@@ -5,7 +5,7 @@ const restaurants = [{
   "delivery": "X",
   "type": ["飯", "麵", "異國料理"],
   "hours": ["中", "晚"],
-  "url": "./img/img1.png"
+  "url": "../week2/img/img1.png"
 },
 {
   "Id": "2.麵堂拉麵",
@@ -301,7 +301,7 @@ const restaurants = [{
 },
 {
   "Id": "34.爆Q美式炸雞",
-  "price": ["100以內", "100~200"],
+  "price": "100以內",
   "distance": "騎車10分鐘",
   "delivery": "O",
   "type": "異國料理",
@@ -337,7 +337,7 @@ const restaurants = [{
 },
 {
   "Id": "38.十六區壽司",
-  "price": ["100~200", "200~300"],
+  "price": "100~200",
   "distance": "騎車10分鐘",
   "delivery": "X",
   "type": ["異國料理"],
@@ -575,7 +575,7 @@ const restaurants = [{
   "distance": "騎車10分鐘",
   "delivery": "X",
   "type": ["甜點咖啡"],
-  "hours": ["中", "晚"],
+  "hours": [ "晚"],
   "url": "./img/img64.jpg"
 },
 {
@@ -625,7 +625,7 @@ const restaurants = [{
 },
 {
   "Id": "70.米舖飯麵",
-  "price": ["100~200"],
+  "price": "100~200",
   "distance": "騎車10分鐘",
   "delivery": "X",
   "type": ["小吃", "飯", "麵"],
@@ -674,7 +674,7 @@ const restaurants = [{
   "distance": "騎車10分鐘",
   "delivery": "X",
   "type": ["異國料理", "麵", "其他"],
-  "hours": ["中", "晚"],
+  "hours": ["中"],
   "url": "./img/img75.jpg"
 },
 {
@@ -683,7 +683,7 @@ const restaurants = [{
   "distance": "騎車10分鐘",
   "delivery": "X",
   "type": ["異國料理", "飯", "麵"],
-  "hours": ["中", "晚"],
+  "hours": ["晚"],
   "url": "./img/img76.jpg"
 },
 {
@@ -724,7 +724,7 @@ const restaurants = [{
 },
 {
   "Id": "81.威力甜點做什麼",
-  "price": ["100以內", "100~200"],
+  "price": "100以內",
   "distance": "騎車10分鐘",
   "delivery": "X",
   "type": "甜點咖啡",
@@ -733,7 +733,7 @@ const restaurants = [{
 },
 {
   "Id": "82.泰方象",
-  "price": ["100以內", "100~200"],
+  "price": "100以內",
   "distance": "騎車10分鐘",
   "delivery": "X",
   "type": ["異國料理", "飯", "麵", "其他"],
@@ -806,7 +806,7 @@ const restaurants = [{
 },
 {
   "Id": "90.貳壹村",
-  "price": ["100以內", "100~200"],
+  "price": "100以內",
   "distance": "騎車10分鐘",
   "delivery": "X",
   "type": ["麵"],
@@ -824,7 +824,7 @@ const restaurants = [{
 },
 {
   "Id": "92.麥當勞",
-  "price": ["100以內", "100~200"],
+  "price": "100以內",
   "distance": "校內",
   "delivery": "O",
   "type": ["異國料理"],
@@ -932,7 +932,7 @@ const restaurants = [{
 },
 {
   "Id": "104.倆小食堂",
-  "price": ["100以內", "100~200"],
+  "price": "100以內",
   "distance": "校內",
   "delivery": "O",
   "type": ["異國料理", "麵"],
@@ -1101,6 +1101,6 @@ const restaurants = [{
   "hours": ["中", "晚"],
   "url": "./img/img92.jpg"
 }
-];
+]
 
-export default restaurants;
+export default restaurants
