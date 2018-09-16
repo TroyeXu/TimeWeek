@@ -5,6 +5,8 @@ import h404 from "./views/h404.vue"
 import week0 from "./views/week0/week0.vue"
 import week1 from "./views/week1/week1.vue"
 import week2 from "./views/week2/week2.vue"
+import week7 from "./views/week7/week7.vue"
+
 
 Vue.use(Router)
 export default new Router({
@@ -32,6 +34,11 @@ export default new Router({
       path: "/week2",
       name: "week2",
       component: week2
-    }    
+    },
+    {
+      path: "/week7",
+      name: "week7",
+      component: week7
+    }   
   ]
 })

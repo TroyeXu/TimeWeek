@@ -10,7 +10,6 @@ import CollapseTransition from "element-ui/lib/transitions/collapse-transition"
 import VueKonva from "vue-konva"
 
 import "element-ui/lib/theme-chalk/index.css"
-import "font-awesome/scss/font-awesome.scss"
 import "../src/static/css/elementCommn.css"
 import "../src/static/css/normalize.css"
 import "../src/static/css/utilites.sass"
@@ -26,11 +25,11 @@ Vue.prototype.Qs = Qs
 // Window.Qs = Qs
 //axios
 axios.defaults = {
- headers: {
-  "Content-Type": "application/x-www-form-urlencoded"
- },
- timeout: 5000, //斷掉
- withCredentials: true, //攜帶cookie
+  headers: {
+    "Content-Type": "application/x-www-form-urlencoded"
+  },
+  timeout: 5000, //斷掉
+  withCredentials: true, //攜帶cookie
 }
 Vue.prototype.$http = axios
 //jq
@@ -44,7 +43,7 @@ Vue.config.productionTip = false
 Vue.config.devtools = true
 window.vm = vm
 const vm = new Vue({
- router,
- store,
- render: h => h(App)
+  router,
+  store,
+  render: h => h(App)
 }).$mount("#app")

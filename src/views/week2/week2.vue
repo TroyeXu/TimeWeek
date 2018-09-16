@@ -1,12 +1,13 @@
 <template>
-  <div id="app" v-cloak >
-    <div class="title"><h1>Ergojubman</h1></div>
+  <div id="app" v-cloak>
+    <div class="title">
+      <h1>Ergojubman</h1>
+    </div>
     <filterHeader :style="styleObject"></filterHeader>
-    <filterSelect :style="styleObject"  :storeList="storeList"></filterSelect>
-    <listProduct :style="styleObject"  :storeList="storeList"></listProduct>
+    <filterSelect :style="styleObject" :storeList="storeList"></filterSelect>
+    <listProduct :style="styleObject" :storeList="storeList"></listProduct>
   </div>
 </template>
-
 <script>
 import baseData from "../week2/restaurants.js"
 import filterSelect from "../week2/filterSelect.vue"
@@ -22,28 +23,28 @@ export default {
   },
   data() {
     return {
-      styleObject:{
-        margin:'1rem 0',
-        padding: '0 1.2rem'
+      styleObject: {
+        margin: "1rem 0",
+        padding: "0 1.2rem"
       },
-      //all-data e
-      storeList: baseData,
+      //all-data
+      storeList: baseData
     }
   },
   mounted() {
-    this.loading();
+    this.loading()
   },
   methods: {
     loading() {
-        const loading = this.$loading({
-          lock: true,
-          text: 'Loading',
-          spinner: 'el-icon-loading',
-          background: 'rgba(255, 255, 255, 0.7)'
-        });
-        setTimeout(() => {
-          loading.close();
-        }, 1000);
+      const loading = this.$loading({
+        lock: true,
+        text: "Loading",
+        spinner: "el-icon-loading",
+        background: "rgba(255, 255, 255, 0.7)"
+      })
+      setTimeout(() => {
+        loading.close()
+      }, 1000)
     },
     get_Re: function() {
       this.store_list = baseData

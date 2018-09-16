@@ -13,11 +13,11 @@
             <div class="main">
               <div class="titletext df">
                 <el-checkbox v-model="item.complete"></el-checkbox>
-                <input class="intext"  v-model="item.message">
+                <input class="intext" v-model="item.message">
               </div>
               <div class="titleicon df">
                 <i class="el-icon-star-on" @click="item.stared=!item.stared" v-if="item.stared"></i>
-                <i class="el-icon-star-off"  @click="item.stared=!item.stared" v-if="!item.stared"></i>
+                <i class="el-icon-star-off" @click="item.stared=!item.stared" v-if="!item.stared"></i>
                 <i class="el-icon-edit" @click="open=!open" v-bind:class="{open:open}"></i>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default {
           }
         })
     },
-    isShow(item,id) {
+    isShow(item, id) {
       this.show = !this.show
     },
     handleSelect(key) {
