@@ -1,94 +1,71 @@
 <template>
   <div class="hello">
-    <div class="wrap">
-      <header>MEN’S TOPS</header>
-      <main>
-        <div class="item item1">
-          <div class="item-content">
-            <h2 data-title="LINEN BLAZ">LINEN BLAZ</h2>
-            <p class="txt">2Linddffer</p>
-            <p class="num">1</p>
-            <div class="pic">
-              <img src="https://images.unsplash.com/photo-1537341976909-9f313bd9b5cd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8e6acb04826adbd0a39ee2122ebc0c68&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            <div class="striped"></div>
-            <div class="border-box"></div>
-          </div>
-        </div>
-        <div class="item item2">
-          <div class="item-content">
-            <h2 data-titile="LINEN BLAZ">LINEN BLAZ</h2>
-            <p class="txt">2Linddffer</p>
-            <p class="num">2</p>
-            <div class="pic">
-              <img src="https://images.unsplash.com/photo-1537341976909-9f313bd9b5cd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8e6acb04826adbd0a39ee2122ebc0c68&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            <div class="border-box"></div>
-            <div class="color-box"></div>
-          </div>
-        </div>
-        <div class="item item3">
-          <div class="item-content">
-            <!-- <h2 data-titile="LINEN BLAZ">LINEN BLAZ</h2>
-            <p class="txt">2Linddffer</p>
-            <p class="num">3</p> -->
-            <div class="pic">
-              <img src="https://images.unsplash.com/photo-1537341976909-9f313bd9b5cd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8e6acb04826adbd0a39ee2122ebc0c68&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            <!-- <div class="border-box"></div>
-            <div class="color-box"></div> -->
-          </div>
-        </div>
-        <div class="item item4">
-          <div class="item-content">
-            <!-- <h2 data-titile="LINEN BLAZ">LINEN BLAZ</h2>
-            <p class="txt">2Linddffer</p>
-            <p class="num">4</p> -->
-            <div class="pic">
-              <img src="https://images.unsplash.com/photo-1537341976909-9f313bd9b5cd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8e6acb04826adbd0a39ee2122ebc0c68&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            <!-- <div class="striped"></div>
-            <div class="border-box"></div> -->
-          </div>
-        </div>
-        <div class="item item5">
-          <div class="item-content">
-            <!-- <h2 data-titile="LINEN BLAZ">LINEN BLAZ</h2>
-            <p class="txt">2Linddffer</p>
-            <p class="num">5</p> -->
-            <div class="pic">
-              <img src="https://images.unsplash.com/photo-1537341976909-9f313bd9b5cd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8e6acb04826adbd0a39ee2122ebc0c68&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            <!-- <div class="striped"></div>
-            <div class="border-box"></div>
-            <div class="color-box"></div> -->
-          </div>
-        </div>
-        <div class="item item6">
-          <div class="item-content">
-            <!-- <h2 data-titile="LINEN BLAZ">LINEN BLAZ</h2>
-            <p class="txt">2Linddffer</p>
-            <p class="num">6</p> -->
-            <div class="pic">
-              <img src="https://images.unsplash.com/photo-1537341976909-9f313bd9b5cd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8e6acb04826adbd0a39ee2122ebc0c68&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            <!-- <div class="border-box"></div>
-            <div class="color-box"></div> -->
-          </div>
-        </div>
-        <div class="item item7">
-          <div class="item-content">
-            <!-- <h2 data-titile="LINEN BLAZ">LINEN BLAZ</h2>
-            <p class="txt">2Linddffer</p>
-            <p class="num">7</p> -->
-            <div class="pic">
-              <img src="https://images.unsplash.com/photo-1537341976909-9f313bd9b5cd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8e6acb04826adbd0a39ee2122ebc0c68&auto=format&fit=crop&w=500&q=60" alt="">
-            </div>
-            <!-- <div class="border-box"></div>
-            <div class="color-box"></div> -->
-          </div>          
-        </div>
-      </main>
+    <div class="grid-container">
+      <div class="header">
+        <div class="companytitle">CCCLOTHES</div>
+        <div class="companyslogan">MEN’S TCGS</div>
+      </div>
+      <div class="grid-item item1">
+        <div class="img-main"></div>
+        <div class="title" data-title="LINEN BLAZER">LINEN BLAZER</div>
+        <div class="number">01</div>
+        <div class="subtitle">Men’s outfit</div>
+        <div class="box-border"></div>
+        <div class="stripe"></div>
+      </div>
+      <div class="grid-item item2">
+        <div class="img-main"></div>
+        <div class="title" data-title="">FREELIFT</div>
+        <div class="number">02</div>
+        <div class="subtitle">Men’s basics</div>
+        <div class="box"></div>
+        <div class="box-border"></div>
+      </div>
+      <div class="grid-item item3">
+        <div class="img-main"></div>
+        <div class="title" data-title="">SUPER SKINNY</div>
+        <div class="number">03</div>
+        <div class="subtitle">Men’s pattern shirts</div>
+        <div class="box"></div>
+        <div class="box-border"></div>
+        <div class="stripe"></div>
+      </div>
+      <div class="grid-item item4">
+        <div class="img-main"></div>
+        <div class="title" data-title="">VINTAGE DENIM</div>
+        <div class="number">04</div>
+        <div class="subtitle">data</div>
+        <div class="box"></div>
+        <div class="box-border"></div>
+        <div class="stripe"></div>
+      </div>
+      <div class="grid-item item5">
+        <div class="img-main"></div>
+        <div class="title" data-title="">VINTAGE DENIM</div>
+        <div class="number">05</div>
+        <div class="subtitle">data</div>
+        <div class="box"></div>
+        <div class="box-border"></div>
+        <div class="stripe"></div>
+      </div>
+      <div class="grid-item item6">
+        <div class="img-main"></div>
+        <div class="title" data-title="">VINTAGE DENIM</div>
+        <div class="number">06</div>
+        <div class="subtitle">data</div>
+        <div class="box"></div>
+        <div class="box-border"></div>
+        <div class="stripe"></div>
+      </div>
+      <div class="grid-item item7">
+        <div class="img-main"></div>
+        <div class="title" data-title="">VINTAGE DENIM</div>
+        <div class="number">07</div>
+        <div class="subtitle">data</div>
+        <div class="box"></div>
+        <div class="box-border"></div>
+        <div class="stripe"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -107,7 +84,6 @@ export default {
   beforeCreate() {},
   created() {},
   beforeMount() {},
-  mounted() {},
   updated() {},
   activated() {},
   deactivated() {},

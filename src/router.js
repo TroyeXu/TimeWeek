@@ -6,7 +6,7 @@ import week0 from "./views/week0/week0.vue"
 import week1 from "./views/week1/week1.vue"
 import week2 from "./views/week2/week2.vue"
 import week4 from "./views/week4/week4.vue"
-import week6 from "./views/week7/week6.vue"
+import week6 from "./views/week6/week6.vue"
 import week7 from "./views/week7/week7.vue"
 import nunu from "./views/nunu/nunu.vue"
 

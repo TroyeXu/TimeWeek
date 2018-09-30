@@ -1,4 +1,7 @@
-$green: #50E3C2
+
+$black: #000000
+$white: #ffffff
+$blue: #50e3c2
 $bk1: rgba(0,0,0,0.1)
 $bk3: rgba(0,0,0,0.3)
 $fz1: 48px
@@ -10,82 +13,121 @@ $fz2: 24px
   list-style: none
   border: 1px solid black
   font-family: 'Roboto', sans-serif
-main
-  box-sizing: border-box    
-.wrap
-  width: 960px
-  margin: 0 auto
-  &:after
-    content: ""
-    display: block
-    height: 0
-    width: 100%
-    clear: both
-  header 
-    height: 300px
-  .item
-    width: 50%
-    float: left
-    box-sizing: border-box
-.item-content 
-  position: relative
-  padding-bottom: 41.3%
+  box-sizing: border-box
 
-  h2
-    font-size: $fz1
-    position: relative
-    height: 72px
-    line-height: 72px
-    color: black
+h1,h2,h3,h4,h5,p
+  margin: 0
+
+h1
+  font-size: $fz1
+  font-weight: 700
+h2
+  font-size: $fz2
+  font-weight: 700
+body
+  width: 1280px
+  margin: 1rem auto
+  line-height: 1.2
+
+.grid-container
+  display: grid
+  grid-template-columns: repeat(8,1fr) //寬八等分
+  grid-template-rows: repeat(20,1fr) //長20等分
+  .title
+    position: relative    
     &:before,&:after
-      width: 100%
-      content: attr(data-title)
+      overflow: hidden
       position: absolute
-      left: 50%
-      transform: translateX(-50%)
+      left: 1.2rem
+      top: 0
+      content: attr(data-title)
     &:before
+      top: -20px
+      height: 8px
       color: $bk1
-      height: 29px
-      top: -14px
-      overflow: hidden
     &:after
+      top: -10px
+      height: 8px
       color: $bk3
-      height: 32px
-      top: -8px
-      overflow: hidden
-  .txt
-    font-size: $fz2
-    font-weight: 700
-    font-style: italic
-  .num
+.box
+  background-color: $blue
+  z-index: 
+.box-border
+  border: 1rem solid $blue
+  z-index: -1
+.stripe
+  background: repeating-linear-gradient(45deg, transparent, transparent 20px, $blue 20px, $blue 40px)
+.header
+  grid-column: 1 / 9
+  grid-row-start: 1
+  .companytitle
+    background-color: black
+    color: $white
+    margin: 0 auto
+    width: 10rem
+
+    text-align: center
+  .companyslogan
+    color: black
     font-size: $fz1
-    font-weight: bold
-  .striped
-    width: 240px
-    height: 140px
-    background-image: linear-gradient(135deg,$green 0,$green 20px,transparent 20px,transparent 40px,$green 40px,$green 60px ,transparent 60px,transparent 80px,)
-    background-size: 56px 56px
-  .border-box
-    border: 1px solid #000
-  .color-box
-    background-color: $green
-  .pic
-    position: absolute
-    top: 0
-    img
-      vertical-align: middle
-      width: 100%
-      height: 100%      
-.item1 .pic
-  top: 0
-  left: 0
-.item2 .pic
-    width: 50%
-    height: 50%
-    left: 0%
-    transform: translateY(150%)
-  
+    text-align: center    
+.grid-item
+  display: grid
+  border: 1px solid $bk1
 
+.item1
+  border: 1px solid $bk1
+  grid-template-columns: repeat(5,1fr)
+  grid-template-rows: repeat(6,1fr)
+  // <row-start> / <column-start> / <row-end> / <column-end>
+  grid-area: 2 / 1 / 8 / 6
+  .img-main
+    background: url("https://images.unsplash.com/photo-1513827379601-9dba5099a3f9?ixlib=rb-0.3.5&w=960") center center no-repeat
+    background-size: cover
+    grid-area: 2 / 1 / 6 / 4
+  .title
+    grid-area: 2 / 1 / 2 / 4
+    font-size: $fz1
+    text-align: left
+  .number
+    grid-area: 6 / 1 / 6 / 1 
+    transform: translate(-38%, -6%)
+    font-size: $fz1
+  .subtitle
+    grid-area:  6 / 4 / 6 / 5
+    transform: translate(-59%,-90%) rotate(90deg)
+    font-size: $fz2
+  .box-border
+    grid-area: 2 / 4 / 3 / 5
+    transform: translate(-56%,-36%)
+  .stripe
+    grid-area: 5 / 1 / 6 / 3
+    transform: translate(15%,46%)    
 
-
-
+.item2
+  border: 1px solid $bk1
+  grid-template-columns: repeat(3,1fr)
+  grid-template-rows: repeat(5,1fr)
+  // <row-start> / <column-start> / <row-end> / <column-end>
+  grid-area: 2 / 5 / 7 / 9
+  .img-main
+    background: url("https://images.unsplash.com/photo-1514632542677-48fae74a01b2?ixlib=rb-0.3.5&w=480") center center no-repeat
+    background-size: cover
+    grid-area: 3 / 1 / 5 / 2
+  .title
+    grid-area: 2 / 1 / 2 / 4
+    font-size: $fz1
+    text-align: left
+  .number
+    grid-area: 6 / 1 / 6 / 1 
+    transform: translate(-38%, -6%)
+    font-size: $fz1
+  .subtitle
+    grid-area:  6 / 4 / 6 / 5
+    transform: translate(-70%,-90%) rotate(90deg)
+    font-size: $fz2
+  .box
+    grid-area: 2 / 2 / 3 / 3
+  .box-border
+    grid-area: 2 / 2 / 3 / 3
+    transform: translate(10%,20%)
