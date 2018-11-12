@@ -8,5 +8,10 @@ node -v
 npm -v'''
       }
     }
+    stage('check docker') {
+      steps {
+        echo 'ok'
+      }
+    }
   }
 }
