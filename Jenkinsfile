@@ -3,9 +3,7 @@ pipeline {
   stages {
     stage('check project') {
       steps {
-        sh '''npm install
-node -v 
-npm -v'''
+        sh 'npm -v'
       }
     }
     stage('check docker') {
